@@ -1,0 +1,41 @@
+.header__top {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+
+.logo__img {
+  width: 70%;
+}
+
+.nav__main {
+  display: flex;
+}
+
+.nav__item {
+  margin: 2rem 2.5rem;
+}
+
+.nav__link {
+  color: #000000;
+  padding: 2rem;
+}
+
+.header__button {
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+}
+
+.header__bottom {
+  background: url(../../../assets/2x/Banner@2x.png) center/cover no-repeat;
+  min-height: 85vh;
+}

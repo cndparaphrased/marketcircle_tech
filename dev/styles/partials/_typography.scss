@@ -3,7 +3,30 @@ html {
 }
 
 body {
-  // font-family: $main-font;
+  font-family: $main-font;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 6rem;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 6rem 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  letter-spacing: .03rem;
+}
+
+.text__block {
+  font-size: 2rem;
+  padding-right: 2rem;
+  line-height: 3.5rem;
 }
