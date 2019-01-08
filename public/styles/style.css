@@ -369,3 +369,9 @@ h4 {
   padding-top: 5.5rem; }
   .testimonials__link a {
     color: #4a90e2; }
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5rem 3.5rem 10rem; }
