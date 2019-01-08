@@ -165,11 +165,17 @@ section, article {
 
 .button {
   background: #6AAB49;
-  border: none;
-  border-radius: 5px; }
+  border: 1px solid #6AAB49;
+  border-radius: 5px;
+  transition: all .3s; }
   .button .button__link {
     color: #ffffff;
-    padding: 1rem 2.5rem; }
+    padding: 1rem 2.5rem;
+    transition: all .3s; }
+    .button .button__link:hover {
+      color: #6AAB49; }
+  .button:hover {
+    background: #ffffff; }
 
 .button--medium {
   font-size: 2.4rem;
@@ -259,11 +265,37 @@ h4 {
   display: flex; }
 
 .nav__item {
-  margin: 2rem 2.5rem; }
+  margin: 2rem 2.5rem;
+  position: relative; }
+  .nav__item::before {
+    content: "";
+    background-color: #6AAB49;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out; }
+  .nav__item::after {
+    content: "";
+    background-color: #6AAB49;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out; }
+  .nav__item:hover::before {
+    width: 100%; }
+  .nav__item:hover::after {
+    width: 100%; }
+  .nav__item:hover > .nav__link {
+    color: #6AAB49; }
 
 .nav__link {
   color: #000000;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: color .3s ease-in-out; }
 
 .header__button {
   position: absolute;
@@ -366,12 +398,41 @@ h4 {
 
 .testimonials__link {
   font-size: 2rem;
-  padding-top: 5.5rem; }
+  padding: 5.5rem; }
   .testimonials__link a {
-    color: #4a90e2; }
+    color: #4a90e2;
+    padding: 0 2rem;
+    position: relative;
+    transition: color .2s ease-in; }
+    .testimonials__link a:hover {
+      color: #f5a623; }
+    .testimonials__link a::before {
+      content: "";
+      background-color: #f5a623;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 2px;
+      width: 0%;
+      transition: width .3s ease-in-out; }
+    .testimonials__link a::after {
+      content: "";
+      background-color: #f5a623;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      height: 2px;
+      width: 0%;
+      transition: width .3s ease-in-out; }
+    .testimonials__link a:hover::before {
+      width: 100%; }
+    .testimonials__link a:hover::after {
+      width: 100%; }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 5rem 3.5rem 10rem; }
+  .footer__container button {
+    margin-left: 1rem; }
