@@ -19,30 +19,31 @@ a {
 	text-decoration: none;
 }
 
-section {
+section, article {
 	margin: 7.5rem 0;
 }
 
 .button {
 	background: $green;
 	border: none;
-	border-radius: 3px;
+	border-radius: 5px;
 	.button__link {
 		color: #ffffff;
 		padding: 1rem 2.5rem;
 	}
 }
 
+.button--medium {
+	font-size: 2.4rem;
+	letter-spacing: .02rem;
+	line-height: 5.5rem;
+}
+
 .button--large {
 	font-size: 2.4rem;
 	letter-spacing: .02rem;
 	line-height: 4.2rem;
-}
-
-.button__link--medium {
-	padding: 5rem;
-}
-
-.button__link--large {
-	padding: 1rem 7rem;
+	.button__link {
+			padding: 1rem 7rem;
+	}
 }

@@ -6,14 +6,17 @@
 .portfolio__left,
 .portfolio__right,
 .gallery__top,
-.gallery__more {
+.gallery__more,
+.testimonials__blocks,
+.testimonials__item {
   display: flex;
 }
 
 .intro__text,
 .portfolio__left,
 .portfolio__right,
-.gallery__more {
+.gallery__more,
+.testimonials__item {
   justify-content: space-between;
 }
 
@@ -27,12 +30,17 @@
 }
 
 .portfolio__left,
-.portfolio__right {
+.portfolio__right,
+.testimonials__item {
   flex-direction: column;
 }
 
 .gallery__image {
   align-self: flex-end;
+}
+
+.gallery__more {
+  align-items: center;
 }
 
 // = = = = = = = = = =
@@ -71,6 +79,46 @@
 }
 
 .gallery__more {
-  align-items: center;
+  button {
+    margin-right: 1rem;
+  }
+  .text__heading {
+    width: 60%;
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+}
+
+.gallery__more,
+.testimonials {
+  padding: 0 8rem;
   text-align: center;
+}
+
+.testimonials__title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $orange;
+}
+
+.testimonials__blocks {
+  margin-top: 3rem;
+}
+
+.testimonials__item {
+  width: calc((100% - 10rem) / 3);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 3px rgba(153,153,153,.4);
+  padding: 1rem 2rem;
+}
+
+.testimonials__item:nth-of-type(2) {
+  margin: 0 5rem;
+}
+
+.testimonials__link {
+  font-size: 2rem;
+  padding-top: 5.5rem;
+  a {
+    color: $blue;
+  }
 }
