@@ -8,6 +8,10 @@ body {
   font-weight: 400;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
 h1 {
   color: #ffffff;
   font-size: 6rem;
@@ -16,7 +20,6 @@ h1 {
   justify-content: center;
   align-items: flex-end;
   padding: 0 0 6rem 0;
-  margin: 0;
 }
 
 h2 {
@@ -25,8 +28,15 @@ h2 {
   letter-spacing: .03rem;
 }
 
+.text__heading {
+  font-size: 4rem;
+}
+
 .text__block {
   font-size: 2rem;
-  padding-right: 2rem;
-  line-height: 3.5rem;
+  line-height: 4rem;
+}
+
+.text__block--spaced {
+  margin: 3.5rem 4rem 3.5rem 0;
 }

@@ -145,7 +145,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .wrapper {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 2.5rem; }
 
 img {
   max-width: 100%;
@@ -159,13 +160,27 @@ ul {
 a {
   text-decoration: none; }
 
+section {
+  margin: 7.5rem 0; }
+
 .button {
   background: #6AAB49;
   border: none;
   border-radius: 3px; }
   .button .button__link {
     color: #ffffff;
-    padding: 1px 25px; }
+    padding: 1rem 2.5rem; }
+
+.button--large {
+  font-size: 2.4rem;
+  letter-spacing: .02rem;
+  line-height: 4.2rem; }
+
+.button__link--medium {
+  padding: 5rem; }
+
+.button__link--large {
+  padding: 1rem 7rem; }
 
 html {
   font-size: 62.5%; }
@@ -175,6 +190,9 @@ body {
   font-size: 1.6rem;
   font-weight: 400; }
 
+h1, h2, h3, h4, p {
+  margin: 0; }
+
 h1 {
   color: #ffffff;
   font-size: 6rem;
@@ -182,18 +200,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 0 6rem 0;
-  margin: 0; }
+  padding: 0 0 6rem 0; }
 
 h2 {
   font-size: 3.8rem;
   font-weight: 600;
   letter-spacing: .03rem; }
 
+.text__heading {
+  font-size: 4rem; }
+
 .text__block {
   font-size: 2rem;
-  padding-right: 2rem;
-  line-height: 3.5rem; }
+  line-height: 4rem; }
+
+.text__block--spaced {
+  margin: 3.5rem 4rem 3.5rem 0; }
 
 .header__top {
   min-height: 15vh;
@@ -228,3 +250,61 @@ h2 {
 .header__bottom {
   background: url(../../../assets/2x/Banner@2x.png) center/cover no-repeat;
   min-height: 85vh; }
+
+.intro__text,
+.portfolio,
+.portfolio__left,
+.portfolio__right,
+.gallery__top,
+.gallery__more {
+  display: flex; }
+
+.intro__text,
+.portfolio__left,
+.portfolio__right,
+.gallery__more {
+  justify-content: space-between; }
+
+.text__heading,
+.text__block--intro,
+.portfolio__left,
+.portfolio__right,
+.gallery__description,
+.gallery__image {
+  width: 50%; }
+
+.portfolio__left,
+.portfolio__right {
+  flex-direction: column; }
+
+.gallery__image {
+  align-self: flex-end; }
+
+.text__heading,
+.portfolio__left,
+.gallery__description {
+  margin-right: 1rem; }
+
+.text__block--intro,
+.portfolio__right,
+.gallery__image {
+  margin-left: 1rem; }
+
+.intro__button {
+  text-align: center;
+  margin: 3.5rem 0; }
+
+.portfolio__image {
+  margin: 1rem 0 2rem; }
+
+.gallery__description .text__block:last-child {
+  margin-bottom: 0; }
+
+.gallery__bottom {
+  margin: 7.5rem 0; }
+  .gallery__bottom .text__block {
+    margin: 1rem 0 5rem; }
+
+.gallery__more {
+  align-items: center;
+  text-align: center; }

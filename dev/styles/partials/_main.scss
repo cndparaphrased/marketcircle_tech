@@ -1,0 +1,76 @@
+// = = = = = = = = = =
+// FLEXBOX STYLES
+// = = = = = = = = = =
+.intro__text,
+.portfolio,
+.portfolio__left,
+.portfolio__right,
+.gallery__top,
+.gallery__more {
+  display: flex;
+}
+
+.intro__text,
+.portfolio__left,
+.portfolio__right,
+.gallery__more {
+  justify-content: space-between;
+}
+
+.text__heading,
+.text__block--intro,
+.portfolio__left,
+.portfolio__right,
+.gallery__description,
+.gallery__image {
+  width: 50%;
+}
+
+.portfolio__left,
+.portfolio__right {
+  flex-direction: column;
+}
+
+.gallery__image {
+  align-self: flex-end;
+}
+
+// = = = = = = = = = =
+// INDIVIDUAL STYLES
+// = = = = = = = = = =
+.text__heading,
+.portfolio__left,
+.gallery__description {
+  margin-right: 1rem;
+}
+
+.text__block--intro,
+.portfolio__right,
+.gallery__image {
+  margin-left: 1rem;
+}
+
+.intro__button {
+  text-align: center;
+  margin: 3.5rem 0;
+}
+
+.portfolio__image {
+  margin: 1rem 0 2rem;
+}
+
+.gallery__description .text__block:last-child {
+  margin-bottom: 0;
+}
+
+.gallery__bottom {
+  margin: 7.5rem 0;
+  .text__block {
+    margin: 1rem 0 5rem;
+  }
+}
+
+.gallery__more {
+  align-items: center;
+  text-align: center;
+}
