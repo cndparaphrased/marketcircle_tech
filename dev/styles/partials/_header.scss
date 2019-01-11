@@ -13,54 +13,46 @@
 }
 
 .logo__img {
-  width: 70%;
+  width: 70%; 
 }
 
 .nav__main {
   display: flex;
+  padding: 0 0 2.2rem 5rem;
 }
 
-.nav__item {
-  margin: 2rem 2.5rem;
+.nav__link {
+  padding: 2rem 2.5rem;
   position: relative;
-  &::before {
+  color: #000000;
+  transition: color .3s ease-in-out;
+  &::before,
+  &::after {
     content: "";
     background-color: $green;
     position: absolute;
-    right: 0;
-    top: 0;
     height: 2px;
     width: 0%;
     transition: width .3s ease-in-out;
   }
+  &::before {
+    right: 0;
+    top: 2rem;
+  }
   &::after {
-  content: "";
-  background-color: $green;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  height: 2px;
-  width: 0%;
-  transition: width .3s ease-in-out;
+    left: 0;
+    bottom: 2rem;
   }
-  &:hover::before {
-    width: 100%;
-  }
+  &:hover::before,
   &:hover::after {
     width: 100%;
   }
-  &:hover > .nav__link {
+  &:hover {
     color: $green;
   }
 }
 
-.nav__link {
-  color: #000000;
-  padding: 2rem;
-  transition: color .3s ease-in-out;
-}
-
-.header__button {
+.button--header {
   position: absolute;
   right: 0;
   bottom: 2rem;
@@ -69,4 +61,8 @@
 .header__bottom {
   background: url(../../../assets/2x/Banner@2x.png) center/cover no-repeat;
   min-height: 85vh;
+}
+
+.mobile__nav {
+  display: none;
 }
